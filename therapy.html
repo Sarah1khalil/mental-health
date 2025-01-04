@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindHaven - Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#therapy">Therapy</a></li>
+            <li><a href="heart.html">For Your Heart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to Your Personal Toolkit for Healing!</h1>
+    <div class="container">
+        <div class="section-button">
+            <div class="button" onclick="showExercises('physical')">Physical Exercises</div>
+            <div class="button" onclick="showExercises('emotional')">Emotional Exercises</div>
+        </div>
+
+        <div id="physical" class="exercise-section hidden">
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Deep Breathing Exercise</h3>
+                <p>Helps calm the nerves and promotes inner peace. Sit in a quiet place, inhale deeply for 4 seconds, hold for 4 seconds, exhale for 6 seconds. Repeat for 5-10 minutes.</p>
+            </div>
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Physical Activity Exercise</h3>
+                <p>Boosts mood and increases energy. Take a 20-minute walk, do yoga, or stretch while listening to calming or upbeat music.</p>
+            </div>
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Progressive Muscle Relaxation (PMR)</h3>
+                <p>Relieves muscle tension and promotes deep relaxation. Tense each muscle group from your feet to your head for 5-10 seconds, then release the tension and focus on the feeling of relaxation.</p>
+            </div>
+        </div>
+
+        <div id="emotional" class="exercise-section hidden">
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Gratitude Exercise</h3>
+                <p>Helps cultivate positive thinking and gratitude. Write down three things you're grateful for each day, big or small, and focus on the positive aspects of your life.</p>
+            </div>
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Emotion Awareness Exercise</h3>
+                <p>Enhances emotional awareness and regulation. Identify the emotions you're experiencing, where you feel them in your body, and acknowledge them without judgment. Try to transform negative emotions into positive ones.</p>
+            </div>
+            <div class="exercise-box">
+                <div class="image-placeholder"></div>
+                <h3>Self-Acceptance Exercise</h3>
+                <p>Promotes self-acceptance and self-compassion. Reflect on and embrace a part of yourself that you might find challenging. Celebrate your positive qualities and their impact on your life.</p>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
