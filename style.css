@@ -1,2 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ebe0f5;
+}
 
+.navbar {
+    background-color: #cba9ef;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc300;
+}
+
+.hero-section {
+    background-color: #cba9ef;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section-header {
+    color: #cba9ef;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.content-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.button-custom {
+    background-color: #ffc300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button-custom:hover {
+    background-color: #ffeb99;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.form-control-custom {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.message-box {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffeb99;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #ffc300;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.box:hover {
+    background-color: #ffeb99;
+}
+
+.contact-section {
+    background-color: #cba9ef;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.urgent-section {
+    color: red;
+    font-weight: bold;
+}
+
+/* For Laptop width */
+@media (min-width: 1024px) {
+    .hero-section {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 150px;
+        height: 80px;
+    }
+}
 

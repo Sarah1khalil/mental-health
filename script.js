@@ -1,9 +1,82 @@
-function showExercises(type) {
-    // Hide all sections
-    let sections = document.querySelectorAll('.exercise-section');
-    sections.forEach(section => section.classList.add('hidden'));
 
-    // Show selected section
-    let selectedSection = document.getElementById(type);
-    selectedSection.classList.remove('hidden');
-}
+    const messages = [
+        "Only in the darkness can you see the stars",
+        "Be yourself and people will like you",
+        "You got this.",
+        "Good luck today! I know you’ll do great.",
+        "Sending major good vibes your way.",
+        "I know this won’t be easy, but I also know you’ve got what it takes to get through it.",
+        "Hope you’re doing awesome!",
+        "Keep on keeping on!",
+        "Sending you good thoughts—and hoping you believe in yourself just as much as I believe in you",
+        "Hope you feel your inner strength building day by day.",
+        "This is tough, but you’re tougher.",
+        "I’m proud of you for walking this road, for doing what’s right for you.",
+        "You’re making a big change, and that’s a really big deal.",
+        "I know what you’re going through is hard, but I’m rooting for you every minute of every day.",
+        "Even when you might not feel it, you’ve got the strength to get through.",
+        "I can’t imagine how you feel. But I can listen when you need to talk.",
+        "Take everything one day at a time. And on the harder days, give me a call.",
+        "I love you no matter what.",
+        "You’re being incredibly brave. I’m proud of you.",
+        "It takes serious courage to get on this path and stay on it. Good on you.",
+        "Stay strong and remember how many people care about you. (I’m one of them!)",
+        "You are not alone in this, and it’s okay to ask for help.",
+        "Healing takes time, but every small step counts.",
+        "You are enough just as you are. Take it one day at a time.",
+        "It's okay to feel not okay sometimes. Your feelings are valid.",
+        "This moment will pass. Better days are ahead.",
+        "You matter, and your well-being is important.",
+        "Your strength is not measured by how much you can endure, but by how gently you treat yourself.",
+        "You don’t have to have it all figured out right now.",
+        "No storm lasts forever—there is light at the end of the tunnel.",
+        "Be kind to yourself. You are doing the best you can.",
+        "It’s okay to rest. Your mental health comes first.",
+        "You are worthy of love, happiness, and peace.",
+        "Even when it feels impossible, you are making progress.",
+        "Your struggles do not define you. You are more than this moment.",
+        "Reach out if you need someone to talk to. You’re not burdening anyone.",
+        "Sometimes, the best thing you can do is just breathe.",
+        "You are more resilient than you realize.",
+        "Allow yourself to feel—it's part of the healing process.",
+        "It’s okay to let go of what you can’t control.",
+        "Your feelings are temporary, but your strength is permanent.",
+        "You deserve to take care of yourself, no matter how hard it feels.",
+        "Progress is not always linear, but you’re still moving forward.",
+        "You don’t have to go through this alone. Support is available.",
+        "Believe in yourself, even when it’s hard to see your worth.",
+        "You are stronger than your struggles.",
+        "Take it one moment at a time. You are doing just fine.",
+        "Don’t be afraid to ask for help. It’s a sign of strength, not weakness.",
+        "Healing is not a race. Take the time you need.",
+        "This too shall pass—hang in there.",
+        "You don’t have to be perfect, you just need to keep going.",
+        "Every day is a new opportunity to begin healing.",
+        "Give yourself grace—progress comes in many forms.",
+        "It’s okay to feel tired. Your body and mind need rest.",
+        "You have the strength to get through this, even if you don’t feel it right now.",
+        "Sometimes, the hardest days teach us the most.",
+        "There is hope, even when it feels out of reach.",
+        "You don’t have to be okay all the time. It’s alright to take breaks.",
+        "Take care of yourself, inside and out. You deserve it.",
+        "No feeling lasts forever, not even the hard ones.",
+        "It’s okay to not have all the answers. Just keep moving forward.",
+        "Remember that you are not defined by your struggles, but by how you rise above them.",
+        "You don’t have to carry everything alone. It’s okay to lean on others.",
+        "Even in the darkest times, your light shines brightly.",
+        "You are doing better than you think. Be proud of yourself.",
+        "There’s no rush to feel better. Your healing will happen at your own pace.",
+        "Sometimes, it's okay to just take a break and do nothing.",
+        "You are deserving of love and compassion, especially from yourself.",
+        "Take things one step at a time—you’re making progress.",
+        "It's okay to have difficult days. You will rise above them.",
+        "You are a warrior, and you will come out stronger on the other side."
+    ];
+
+    function displayRandomMessage() {
+        const message = messages[Math.floor(Math.random() * messages.length)];
+        localStorage.setItem("message", message);
+        document.getElementById('message-display').style.display = 'block';
+        document.getElementById('message-display').innerText = message;
+    }
+
